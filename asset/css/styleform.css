@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    background-color: #152733;
+
+    
+}
+
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+
+
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: rgb(29, 16, 16);
+    font-size: 15px;
+    font-weight: 300;
+    color: #1a1515;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: green;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+
+.badan-bawah{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 400px;
+    border-color: black;
+    border: 15px solid #8e7f7f68;
+    border-style: solid;
+    text-align: center;
+    
+
+}
+
+
+.container{
+    width: 450px;
+    height: auto;
+   margin-top: 13px;
+   border: 5px ;
+   
+    background-image: 
+        linear-gradient(#51685f9d, #55635868);
+    background-clip: content-box, padding-box;
+}
+
+.kiri{
+    float: left;
+    padding-left: 10px;
+}
