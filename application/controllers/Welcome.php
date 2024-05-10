@@ -27,9 +27,6 @@ class Welcome extends CI_Controller {
     $this->load->library('form_validation');
 
     $this->form_validation->set_rules('nama', 'Nama', 'required');
-    $this->form_validation->set_rules('harga', 'Harga', 'required');
-    $this->form_validation->set_rules('stock', 'Stock', 'required');
-	$this->form_validation->set_rules('jenis', 'Jenis', 'required');
 	$this->form_validation->set_rules('asal', 'asal', 'required');
 
     if ($this->form_validation->run() == FALSE) {
@@ -61,9 +58,6 @@ class Welcome extends CI_Controller {
     $this->load->library('form_validation');
 
     $this->form_validation->set_rules('nama', 'Nama', 'required');
-    $this->form_validation->set_rules('harga', 'Harga', 'required');
-    $this->form_validation->set_rules('stock', 'Stock', 'required');
-	$this->form_validation->set_rules('jenis', 'Jenis', 'required');
 	$this->form_validation->set_rules('asal', 'asal', 'required');
 
     if ($this->form_validation->run() == FALSE) {
