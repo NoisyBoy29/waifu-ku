@@ -1,71 +1,65 @@
-###################
-What is CodeIgniter
-###################
+# waifu-ku
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+**waifu-ku** adalah aplikasi web sederhana untuk mengelola daftar waifu favorit Anda, dibuat menggunakan framework CodeIgniter (PHP) dengan database MySQL. Aplikasi ini memungkinkan pengguna untuk menambah, melihat, memperbarui, dan menghapus data waifu beserta fotonya.
 
-*******************
-Release Information
-*******************
+## Fitur
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+- **Lihat Daftar Waifu**: Menampilkan tabel berisi kode, nama, asal anime, dan foto waifu.
+- **Tambah Waifu**: Formulir untuk menambah waifu baru, termasuk upload gambar.
+- **Edit Waifu**: Memperbarui data waifu yang sudah ada, termasuk mengganti foto.
+- **Hapus Waifu**: Menghapus data waifu dari database.
+- **Detail Waifu**: Melihat informasi lengkap beserta gambar waifu.
+- **Modal Tentang Kami**: Informasi pembuat aplikasi (Naufal & Farhan, 4IA01) dapat dilihat di halaman utama.
 
-**************************
-Changelog and New Features
-**************************
+## Teknologi yang Digunakan
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- **Backend**: PHP dengan CodeIgniter
+- **Frontend**: Bootstrap 4, HTML, CSS, JavaScript
+- **Database**: MySQL (struktur tabel tersedia pada file `sismul-waifuku.sql`)
 
-*******************
-Server Requirements
-*******************
+## Instalasi
 
-PHP version 5.6 or newer is recommended.
+1. **Clone repositori ini:**
+   ```bash
+   git clone https://github.com/NoisyBoy29/waifu-ku.git
+   ```
+2. **Setup Database:**
+   - Import file `sismul-waifuku.sql` ke MySQL Anda.
+   - Pastikan pengaturan database di `application/config/database.php` sudah sesuai (default: user `root`, tanpa password, database `sismul-waifuku`).
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+3. **Atur Base URL:**
+   - Edit file `application/config/config.php` pada bagian `$config['base_url']` sesuai dengan alamat aplikasi Anda.
 
-************
-Installation
-************
+4. **Jalankan di Localhost:**
+   - Pastikan web server (XAMPP/LAMPP) dan MySQL berjalan.
+   - Akses aplikasi via browser ke `http://localhost/waifu-ku/`
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+## Struktur Direktori Penting
 
-*******
-License
-*******
+- `application/controllers/`: Controller utama (`Controller.php`, `Welcome.php`) untuk logika CRUD.
+- `application/models/`: Model database (`M_model.php`, `M_welcome.php`).
+- `application/views/`: Templat tampilan (`table.php`, `create.php`, `view.php`, `update.php`).
+- `asset/`: Berisi file gambar waifu dan style CSS.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+## Contoh Data Awal
 
-*********
-Resources
-*********
+Beberapa data waifu yang sudah tersedia:
+- Elinalise (Mushoku Tensei)
+- Kato Megumi (Saekano)
+- Rias Gremory (Highschool DxD)
+- Shinomiya Kaguya (Love is war)
+- Yor Forger (Spy x Family)
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+## Lisensi
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+MIT License
 
-***************
-Acknowledgement
-***************
+---
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+> Proyek ini dibuat untuk keperluan Praktikum Sistem Multimedia 2024, Kelas 4IA01 oleh Naufal Maulana Al-Ghifari Irawan & Farhan Alba Saputra.
+
+---
+
+**Catatan**:  
+- Untuk melihat kode lengkap, kunjungi [GitHub Repository waifu-ku](https://github.com/NoisyBoy29/waifu-ku).
+- Jika ingin mengembangkan lebih lanjut, silakan fork dan modifikasi sesuai kebutuhan.
